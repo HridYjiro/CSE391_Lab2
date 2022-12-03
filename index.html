@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Random Quote Generator in JavaScript| CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>Quote of the Day</header>
+        <div class="content">
+            <div class="quote-area">
+                <i class="fas fa-quote-left"></i>
+                <p class="quote">Never give up because you never know if the next try is going to be the one that works.</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>__</span>
+                <span class="name">Mary Kay Ash</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="features">
+                <ul>
+                    <li class="speech"><i class="fas fa-volume-up"></i></li>
+                    <li class="copy"><i class="fas fa-copy"></i></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i></li>
+                </ul>
+                <button>New Quote</button>
+            </div>
+        </div>
+    </div>
+    <break />
+    <div class="Converter" style="margin:50px">
+        <div class="Heading"> <h1> Weight Converter</h1> </div>
+        <div class="Ew">
+            Enter Weight : <input type="number" placeholder="Enter weight" id="inWeight">
+            <span>
+
+                <select id="wt">
+                    <option id="Grams" selected> Grams</option>
+                    <option id="Kilograms"> KiloGrams</option>
+                    <option id="Pounds"> Pounds</option>
+                    <option id="Ounces"> Ounces</option>
+                </select>
+            </span>
+            <span> <input type="submit" value="Submit" onclick="func()" id="submit-button"> </span>
+        </div>
+        <div class="results">
+            <h2> <b> Result</b> </h2>
+        </div>
+        <div>
+            <table align="center" cellspacing="2" cellpadding="4">
+                <tr>
+                    <td class="out1"> In Grams</td>
+                    <td> :</td>
+                    <td id="Rgrams"> 43</td>
+                </tr>
+                <tr>
+                    <td class="out2"> In KiloGrams</td>
+                    <td> :</td>
+                    <td id="Rkilograms"> 18</td>
+                </tr>
+                <tr>
+                    <td class="out3"> In Pounds</td>
+                    <td> :</td>
+                    <td id="Rpounds"> 12</td>
+                </tr>
+                <tr>
+                    <td class="out4"> In Ounces</td>
+                    <td> :</td>
+                    <td id="Rounces"> 90</td>
+                </tr>
+            </table>
+        </div>
+        <div> <br> <br> <input type="reset" class="Re" onclick="resetValue()" value="Reset"> </div>
+    </div>
+    <break />
+    <div class="MMSA" style="margin:50px">
+        <div class="P2">
+            <div class="Heading"> <h1> Sum Avg Max Min </h1> </div>
+            <div>
+                <input type="text" id="numberSeries" />
+                <button id="calculateSumAverage" onclick="calculateSumAverage();">Calculate</button>
+                <div id="calculationSumOutput"></div>
+                <div id="calculationMaxOutput"></div>
+                <div id="calculationMinOutput"></div>
+                <div id="calculationAvgOutput"></div>
+                <div id="calculationRevOutput"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
